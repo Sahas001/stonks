@@ -31,6 +31,16 @@ CLI commands:
 - `go run ./cmd/stonks buy AKJCL 100 415`
 - `go run ./cmd/stonks pnl`
 
+## Example output
+
+Example `picks` output:
+
+![Example picks output](./docs/images/example-picks.png)
+
+Example review output:
+
+![Example review output](./docs/images/example-review.png)
+
 ## Configuration
 
 ```bash
@@ -132,6 +142,10 @@ export STONKS_INSECURE_SKIP_TLS_VERIFY=true
 
 Use that only when you understand the risk.
 
-## Important limitation
+## Important notes
 
 This project ranks setups mechanically. It does not know your capital base, portfolio concentration, tax constraints, or broader market context. Use it as a screening tool, not as an unattended execution system.
+
+This program needs floorsheet data to score setups correctly. In this repository's current setup, that data is pulled from Nepse Alpha, which means you need to set the required cookies or other auth headers in your environment before scraping will work.
+
+The scraper is still source-configurable. If Nepse Alpha changes or you prefer another website, you can switch the base URL, paths, and auth values to scrape floorsheet data from a different source.
