@@ -149,3 +149,6 @@ This project ranks setups mechanically. It does not know your capital base, port
 This program needs floorsheet data to score setups correctly. In this repository's current setup, that data is pulled from Nepse Alpha, which means you need to set the required cookies or other auth headers in your environment before scraping will work.
 
 The scraper is still source-configurable. If Nepse Alpha changes or you prefer another website, you can switch the base URL, paths, and auth values to scrape floorsheet data from a different source.
+
+<!-- Test pull request workflow verification -->
+
